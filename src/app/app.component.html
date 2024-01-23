@@ -1,7 +1,7 @@
 <div class='container'>
     <div class="map">
         <app-world-map
-            (svgIdSelected)="selectedSvgId = $event"
+            (idSelected)="selectedId = $event"
             (regionSelected)="selectedRegion = $event"
             (incomeSelected)="selectedIncome = $event"
             (capitalSelected)="selectedCapital = $event"
@@ -11,12 +11,12 @@
     </div>
     <div class="info">
         <app-info
-            [countryId]="selectedSvgId"
+            [countryId]="selectedId"
             [countryRegion]="selectedRegion"
             [countryIncome]="selectedIncome"
-            [countryCapital]="selectedCapital"
-            [countryLongitude]="selectedLongitude"
-            [countryLatitude]="selectedLatitude">
+            [capitalCity]="selectedCapital"
+            [longitude]="selectedLongitude"
+            [latitude]="selectedLatitude">
         </app-info>
     </div>
 </div>

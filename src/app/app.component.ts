@@ -7,31 +7,29 @@ import { Component, Input } from '@angular/core';
 })
 
 export class AppComponent {
-  selectedSvgId: string = '';
-  selectedRegion: string = '';
-  selectedIncome: string = '';
-  
   selectedCapital: string = '';
-  selectedLongitude: string = '';
+  selectedId: string = '';
+  selectedIncome: string = '';
   selectedLatitude: string = '';
+  selectedLongitude: string = '';
+  selectedRegion: string = '';
 
-
-  onSvgIdSelected(svgId: string) {
-    this.selectedSvgId = svgId;
+  onCapitalSelected(capital: string) {
+    this.selectedCapital = capital;
   }
-  onRegionSelected(region: string) {
-    this.selectedRegion = region;
+  onIdSelected(Id: string) {
+    this.selectedId = Id;
   }
   onIncomeSelected(incomeId: string) {
     this.selectedIncome = incomeId;
   }
-  onCapitalSelected(capital: string) {
-    this.selectedCapital = capital;
+  onLatitudeSelected(latitude: string) {
+    this.selectedLatitude = latitude;
   }
   onLongitudeSelected(longitude: string) {
     this.selectedLongitude = longitude;
   }
-  onLatitudeSelected(latitude: string) {
-    this.selectedLatitude = latitude;
+  onRegionSelected(region: string) {
+    this.selectedRegion = region;
   }
 }

@@ -1,11 +1,11 @@
 <div>
     <h3>{{ countryId }}</h3> 
     <ul>
-        <li>Region: {{ countryRegion }}</li>
-        <li>Country Income: {{ countryIncome }}</li>
-        <li>Capital City: {{ countryCapital }}</li>
-        <li>Longitude: {{ countryLongitude }}</li>
-        <li>Latitude: {{ countryLatitude }}</li>
+        <li *ngIf="countryRegion"><strong>Region:</strong> {{ countryRegion }}</li>
+        <li *ngIf="countryIncome"><strong>Country Income:</strong> {{ countryIncome }}</li>
+        <li *ngIf="capitalCity"><strong>Capital City:</strong> {{ capitalCity }}</li>
+        <li *ngIf="longitude"><strong>Longitude:</strong> {{ longitude }}</li>
+        <li *ngIf="latitude"><strong>Latitude:</strong> {{ latitude }}</li>
     </ul>
 
 </div>

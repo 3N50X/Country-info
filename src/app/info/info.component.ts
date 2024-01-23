@@ -6,12 +6,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrl: './info.component.css'
 })
 export class InfoComponent  implements OnInit{
+  @Input() capitalCity!: string;
   @Input() countryId!: string;
-  @Input() countryRegion!: string;
   @Input() countryIncome!: string;
-  @Input() countryCapital!: string;
-  @Input() countryLongitude!: string;
-  @Input() countryLatitude!: string;
+  @Input() latitude!: string;
+  @Input() longitude!: string;
+  @Input() countryRegion!: string;
 
   constructor() { }
 

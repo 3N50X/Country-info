@@ -9,13 +9,13 @@ import { InfoComponent } from './info/info.component';
 @NgModule({
   declarations: [
     AppComponent,
-    WorldMapComponent,
-    InfoComponent
+    InfoComponent,
+    WorldMapComponent
     
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     HttpClientModule
   ],
   providers: [],
